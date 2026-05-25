@@ -21,7 +21,7 @@ html {
 }
 
 body {
-  font-family: 'Manrope', sans-serif;
+  font-family: "Manrope", sans-serif;
   color: var(--color-light--2);
   font-weight: 400;
   line-height: 1.6;
@@ -124,7 +124,7 @@ a:visited {
   gap: 0.5rem 2.5rem;
 
   /* Match height and activity boxes */
-  height: 9.25rem;
+  height: 12rem;
   transition: all 0.5s, transform 1ms;
 }
 
@@ -141,14 +141,16 @@ a:visited {
   align-items: center;
 }
 
-.form__row--hidden {
-  display: none;
-}
-
 .form__label {
   flex: 0 0 50%;
   font-size: 1.5rem;
   font-weight: 600;
+}
+
+.form__btn {
+  background-color: var(--color-light--3);
+  border: none;
+  border-radius: 0.4rem;
 }
 
 .form__input {
@@ -165,10 +167,6 @@ a:visited {
 .form__input:focus {
   outline: none;
   background-color: #fff;
-}
-
-.form__btn {
-  display: none;
 }
 
 .copyright {
@@ -217,4 +215,15 @@ a:visited {
 }
 .cycling-popup .leaflet-popup-content-wrapper {
   border-left: 5px solid var(--color-brand--1);
+}
+
+.load {
+  height: 3rem;
+  width: 8rem;
+  position: relative;
+  right: 8rem;
+  z-index: 1023;
+  border: solid 0.25rem, black;
+  border-radius: 1rem;
+  background-color: #cde8b6;
 }

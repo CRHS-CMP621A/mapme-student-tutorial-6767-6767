@@ -13,7 +13,7 @@
 
     <link rel="stylesheet" href="style.css" />
 
-    <script src="script.js"></script>
+    <script defer src="script.js"></script>
     <link
       rel="stylesheet"
       href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
@@ -65,8 +65,12 @@
               placeholder="meters"
             />
           </div>
-          <button class="form__btn">OK</button>
+          <button class="form__btn" type="button" onclick="addHtml()">
+            OK
+          </button>
         </form>
+
+        <div class="liWorkouts"></div>
 
         <!-- <li class="workout workout--running" data-id="1234567890">
           <h2 class="workout__title">Running on April 14</h2>
@@ -119,5 +123,6 @@
     </div>
 
     <div id="map"></div>
+    <button class="load" type="button" onclick="summon()">Load Map</button>
   </body>
 </html>
